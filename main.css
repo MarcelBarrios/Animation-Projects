@@ -1,0 +1,55 @@
+.paw {
+  transition: transform .25s ease-in
+}
+
+.playing .paw {
+  transform: translateX(30px);
+}
+
+.paw {
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.ball {
+  background: #0097C0;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 160px;
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  background: #e3edf2;
+}
+
+.ball {
+  transition:
+  transform 4s .25s  cubic-bezier(.33,.74,.44,.94),
+  background 1s .65s;
+  /*Set*/
+
+}
+/*http://cubic-bezier.com/#.42,0,1,1*/
+/*easings.net*/
+
+/*cats: 200px height, width: ,12frames */
+
+/*https://codepen.io/rachelnabors-teaching/full/cdqga
+http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png
+
+http://courses.rachelnabors.com/p/motion-design-with-css/?product_id=91300&coupon_code=FRONTENDMASTER
+http://courses.rachelnabors.com/courses/66065/lectures/969252*/
+.playing .ball {
+ /*Hint after the class of playing is applied, change the ball's transform to roll*/
+ transform: translateX(400px);
+background: red;
+
+}
+
+.background-position {
+
+}
